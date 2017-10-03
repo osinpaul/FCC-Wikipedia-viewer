@@ -10,27 +10,34 @@
 </head>
 
 <body>
-	<div class="container-fluid col-md-6 margin-fixed">
-		<form class="navbar-form navbar-left navbar-fixed-top text-center" role="search">
-			<div class="col-md-12 logo"><i class="fa fa-wikipedia-w" aria-hidden="true"></i>ikipedia Viewer</div>
-			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Search"></div>
-			<button type="submit" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
-			<button type="button" class="btn btn-default" onclick="window.location='https://ru.wikipedia.org/wiki/Special:Random';"><i class="fa fa-random" aria-hidden="true"></i></button>
-		</form>
+		<nav class="navbar navbar-default navbar-fixed-top text-center">
+				<div class="container paddin">
+					<div class="col-md-12 logo"><i class="fa fa-wikipedia-w" aria-hidden="true"></i>ikipedia Viewer</div>
+					<div class="col-md-3"></div>
+					<div class="col-md-4"><input type="text" class="form-control input" placeholder="Input text for serching here"></div>
+					<div class="col-md-1">
+						<div id="search" class="sbutton"><i class="fa fa-search" aria-hidden="true"></i></div></div>
+						<div class="col-md-1 sbuttton"><div><a href="https://ru.wikipedia.org/wiki/Special:Random" target="_blank"><p id="searchButton"class="sbutton"><i class="fa fa-random" aria-hidden="true"></i></a></div></div>
+					<div class="col-md-4"></div>
+				</div>
+			  </nav>
+	<div class="jumbotron margin-fixed toHide">
+		<h3 class="text-center">There is no result yet, create a new query :)</h3>
+	</div>
+	<div class="container col-md-7 margin-fixed showData">
 
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<ul class="text-left list-unstyled">
+				<ul class="text-left list-unstyled" id="output">
 
 				</ul>
 			</div>
 		</div>
 	</div>
+
 	<nav class="navbar navbar-default navbar-fixed-bottom text-center">
 		<div class="container">
-			<img src="img/fccLogo.png" width="120px" /><small> wikipedia viewer created with <i class="fa fa-search" aria-hidden="true"></i> and <i class="fa fa-google" aria-hidden="true"></i> by <a href="http://osinpaul.ru" target="_blank"> osinpaul</a></small><br>
-
+			<img src="img/fccLogo.png" width="120px" /><small> wikipedia viewer created with <i class="fa fa-search" aria-hidden="true"></i> and <i class="fa fa-google" aria-hidden="true"></i> by <a href="http://osinpaul.ru" target="_blank"> osinpaul</a></small>
 		</div>
 	</nav>
 	<script src="js/jquery.min.js"></script>
