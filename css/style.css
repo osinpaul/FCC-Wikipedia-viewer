@@ -1,0 +1,25 @@
+body {
+    background-color: #ffffff;
+    transition: 5s;
+}
+
+.logo{
+    font-size: 30px;
+    margin-bottom: 2%;
+    letter-spacing: 20px;
+}
+.margin-fixed {
+    margin: 14% 25%;
+    background-color: yellow;
+}
+
+.container-fluid{
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 3%;
+}
+
+.navbar-fixed-bottom, .navbar-fixed-top {
+    padding-top:1%;
+}
+
